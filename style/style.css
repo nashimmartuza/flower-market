@@ -87,6 +87,10 @@ nav li {
   justify-content: space-between;
 }
 
+.banner-content {
+  align-content: end;
+}
+
 .banner-title {
   font-size: 65px;
   font-weight: 700;
@@ -122,19 +126,24 @@ nav li {
   .hero-banner {
     display: flex;
     flex-direction: column-reverse;
+    margin: 0;
   }
   .banner-image {
     padding-bottom: 28px;
   }
-  .banner-content {
-    padding: 0px 16px;
-  }
+
   .banner-title {
     font-size: 40px;
     font-weight: 700;
     padding-bottom: 13px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
-  .banner-image {
+  .banner-description {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .banner-image img {
     width: 100%;
   }
 }
