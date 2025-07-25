@@ -1,0 +1,140 @@
+.noto-serif-normal {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Root style */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Shared Style */
+.flex {
+  display: flex;
+}
+
+.width-margin {
+  max-width: 1140px;
+  margin: 0px auto;
+}
+.primary-color {
+  color: #e95a08;
+}
+.text-color {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Header Section style */
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  margin-top: 30px;
+}
+
+.logo img {
+  width: 135px;
+  height: 82px;
+}
+nav li {
+  list-style: none;
+  margin-right: 48px;
+}
+
+.manu {
+  align-items: center;
+}
+.cart-btn {
+  padding: 13px 25px 13px 0px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: none;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.manu a {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: rgb(137, 135, 161);
+}
+
+.manu a:hover {
+  color: rgb(37, 36, 50);
+  font-weight: 500;
+}
+/* Hero Banner Section style */
+.hero-banner {
+  max-width: 1140px;
+  margin-top: 120px;
+  justify-content: space-between;
+}
+
+.banner-title {
+  font-size: 65px;
+  font-weight: 700;
+}
+.banner-description {
+  width: 430px;
+  text-align: justify;
+  padding-bottom: 13px;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+}
+.banner-image {
+  max-width: 100%;
+}
+
+/* Mobile Friendly */
+@media screen and (max-width: 570px) {
+  nav {
+    padding: 10px 20px;
+  }
+  .logo img {
+    width: 63px;
+    height: 38px;
+  }
+  .cart-btn {
+    padding: 0px;
+  }
+
+  .manu ul {
+    display: none;
+  }
+  .hero-banner {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .banner-image {
+    padding-bottom: 28px;
+  }
+  .banner-content {
+    padding: 0px 16px;
+  }
+  .banner-title {
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 13px;
+  }
+  .banner-image {
+    width: 100%;
+  }
+}

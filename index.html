@@ -4,11 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flower Market</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/flower-fav.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <header></header>
+    <header class="width-margin">
+      <nav class="inter-normal">
+        <figure class="logo">
+          <img src="./assets/logo.png" alt="Brand Name" />
+        </figure>
 
-    <main></main>
+        <div class="manu flex">
+          <ul class="flex">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+          <button class="cart-btn inter-normal">
+            <i class="fa-solid fa-cart-shopping"></i> Cart ($56)
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="noto-serif-normal">
+      <section class="hero-banner flex width-margin">
+        <div class="banner-content">
+          <h1 class="banner-title">
+            ALWAYS <span class="primary-color">FRESH FLOWERS</span>
+          </h1>
+          <p class="banner-description text-color">
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From classic roses to exotic blooms, we offer a wide
+            variety of fresh flowers that are perfect for any occasion.
+          </p>
+        </div>
+
+        <div class="banner-image">
+          <img src="./assets/hero-flower.png" alt="" />
+        </div>
+      </section>
+    </main>
 
     <footer></footer>
   </body>
