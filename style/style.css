@@ -197,6 +197,85 @@ nav li {
 .plant-lover-content li {
   padding-bottom: 20px;
 }
+
+/* latest-deals section style */
+.latest-deals {
+  margin-top: 110px;
+}
+.latest-deals-content {
+  text-align: center;
+}
+.latest-deals-content h2 {
+  font-size: 50px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.latest-deals-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-top: 80px;
+  gap: 20px;
+}
+
+.left-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+.card {
+  border-radius: 18px;
+  /* overflow: hidden; */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.card1 {
+  background: url("../assets/deal-bloom.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 366.22px;
+  height: 206px;
+}
+.card2 {
+  background: url("../assets/deal-ana.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 366.22px;
+  height: 200px;
+}
+.card3 {
+  background-image: url("../assets/deal-zabo.png");
+  width: 753px;
+  height: 423.13px;
+  z-index: 2;
+}
+
+.deal-title {
+  font-family: Noto Serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.deal-btn {
+  color: white;
+  font-family: Inter;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.zabo-plant {
+  font-family: Noto Serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.zabo-shop-btn {
+  color: white;
+  font-family: Inter;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
 /* Mobile Friendly */
 @media screen and (max-width: 570px) {
   nav {
@@ -279,5 +358,49 @@ nav li {
   }
   .plant-lover-content h3 {
     font-size: 30px;
+  }
+  /* Plant deals section responsive */
+  .latest-deals-content h2 {
+    font-size: 32px;
+  }
+
+  .latest-deals-content p {
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 0 10px;
+  }
+
+  .latest-deals-grid {
+    grid-template-columns: 1fr;
+    margin-top: 40px;
+    padding: 0px 20px;
+  }
+
+  .left-grid {
+    grid-template-rows: auto;
+  }
+
+  .card1,
+  .card2,
+  .card3 {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .deal-title,
+  .zabo-plant {
+    font-size: 1.2rem;
+  }
+
+  .deal-btn,
+  .zabo-shop-btn {
+    font-size: 1rem;
+  }
+
+  .card .content {
+    padding: 20px;
   }
 }
