@@ -75,6 +75,9 @@ nav li {
   background-color: white;
   cursor: pointer;
 }
+.cart-btn:hover {
+  color: #e95a08;
+}
 
 .manu a {
   font-size: 16px;
@@ -84,8 +87,11 @@ nav li {
 }
 
 .manu a:hover {
-  color: rgb(37, 36, 50);
+  color: #e95a08;
   font-weight: 500;
+}
+.active {
+  color: black;
 }
 /* Hero Banner Section style */
 .hero-banner {
