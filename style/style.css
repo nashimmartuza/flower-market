@@ -111,11 +111,6 @@ nav li {
   font-weight: 400;
 }
 /* Our Plants section style */
-.our-plants {
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* justify-items: center; */
-}
 .our-plant-content {
   flex-direction: column;
   text-align: center;
@@ -168,7 +163,40 @@ nav li {
   grid-template-columns: repeat(4, 1fr);
   row-gap: 25px;
 }
+/* Plants Lover section style */
+.plants-lover {
+  margin-top: 200px;
+  flex-direction: row;
+  gap: 100px;
+}
+.plant-lover-image img {
+  width: 500px;
+  height: auto;
+}
+.plant-lover-content {
+  position: relative;
+  align-content: center;
+}
+.trusted-badge img {
+  width: 100%;
+}
 
+.trusted-badge {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  left: -250px;
+  top: -110px;
+}
+.plant-lover-content h3 {
+  font-family: Noto Serif;
+  font-size: 50px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.plant-lover-content li {
+  padding-bottom: 20px;
+}
 /* Mobile Friendly */
 @media screen and (max-width: 570px) {
   nav {
@@ -207,5 +235,49 @@ nav li {
   }
   .banner-image img {
     width: 100%;
+  }
+  .our-plants {
+    margin-top: 60px;
+  }
+  .products-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product-card img {
+    width: 171px;
+  }
+  .product-botton {
+    padding: 13px 30px 12px 30px;
+  }
+  .product-title {
+    font-size: 16px;
+  }
+  .product-price {
+    font-size: 16px;
+  }
+  .product-botton {
+    font-size: 16px;
+  }
+  .plants-lover {
+    flex-direction: column;
+    margin-top: 80px;
+    justify-content: center;
+    gap: 30px;
+    padding: 0px 16px;
+  }
+  .plant-lover-image {
+    justify-content: center;
+  }
+  .trusted-badge {
+    display: none;
+  }
+  .plant-lover-image img {
+    width: 358px;
+    height: auto;
+  }
+  .plant-lover-content ul {
+    padding-left: 30px;
+  }
+  .plant-lover-content h3 {
+    font-size: 30px;
   }
 }
